@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`attributesToProps should assign all attributes to the returned object 1`] = `
+Object {
+  "className": "test-class",
+  "disabled": true,
+  "id": "test-id",
+}
+`;
+
+exports[`injectComponent should inject a React component into DOM 1`] = `
+<custom-button>
+  <button
+    class="from-component undefined"
+  >
+    <span>
+      Click me
+    </span>
+  </button>
+</custom-button>
+`;
+
+exports[`parseChildren should return all children as React nodes 1`] = `
+Array [
+  <span>
+    test string
+  </span>,
+  <button
+    disabled={true}
+  >
+    <span>
+      Don't click me
+    </span>
+  </button>,
+  <span
+    className="test"
+    id="the-span"
+  >
+    <span>
+      this is child two
+    </span>
+    <em>
+      <span>
+        Sub-child
+      </span>
+    </em>
+  </span>,
+]
+`;
+
+exports[`slotsToProps should assign all slots to the returned object 1`] = `
+Object {
+  "first": <span
+    slot="first"
+  >
+    First
+  </span>,
+  "second": <span
+    slot="second"
+  >
+    Second
+  </span>,
+}
+`;
