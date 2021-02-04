@@ -1,5 +1,5 @@
 {
-  "name": "dom-to-react",
+  "name": "@nathandevuono/dom-to-react",
   "version": "1.0.0",
   "description": "A package that takes DOM nodes and transforms them into a React tree",
   "main": "dist/dom-to-react.js",
@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "author": "Nathan DeVuono",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "react": "~17.0.1",
     "react-dom": "~17.0.1"
@@ -27,5 +27,13 @@
   },
   "dependencies": {
     "uuid": "^8.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanDeVuono/dom-to-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NathanDeVuono/dom-to-react/issues"
+  },
+  "homepage": "https://github.com/NathanDeVuono/dom-to-react#readme"
 }
