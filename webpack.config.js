@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode: process.env === "development" ? "development" : "production",
   entry: {
     "dom-to-react": path.resolve(__dirname, "src/index.jsx"),
     "inject-button": path.resolve(__dirname, "src/injectButton"),
@@ -21,7 +21,9 @@ module.exports = {
       },
     ],
   },
-  devtool: "eval-cheap-module-source-map",
+  devtool:
+   
+    process.env === "development" ? "eval-cheap-module-source-map" : undefined,
   resolve: {
     extensions: [".js", ".jsx"],
   },

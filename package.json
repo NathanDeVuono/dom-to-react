@@ -5,7 +5,7 @@
   "main": "dist/dom-to-react.js",
   "scripts": {
     "build": "npx webpack -- --env production",
-    "watch": "npx webpack -- --env development",
+    "watch": "npx webpack -- --env development --watch",
     "test": "jest"
   },
   "author": "Nathan DeVuono",
@@ -28,6 +28,9 @@
   "dependencies": {
     "uuid": "^8.3.2"
   },
+  "files": [
+    "dist/dom-to-react.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NathanDeVuono/dom-to-react.git"
