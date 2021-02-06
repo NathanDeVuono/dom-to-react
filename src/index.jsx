@@ -52,9 +52,13 @@ export function parseChildren(element) {
   }, []);
 }
 
-export default function injectComponent(Component, element) {
+export default function injectComponent(Component, element, props = {}) {
   render(
-    <Component {...attributesToProps(element)} {...slotsToProps(element)}>
+    <Component
+      {...attributesToProps(element)}
+      {...slotsToProps(element)}
+      {...props}
+    >
       {parseChildren(element)}
     </Component>,
     element

@@ -8,6 +8,18 @@ Object {
 }
 `;
 
+exports[`injectComponent should apply props object 1`] = `
+<custom-button>
+  <button
+    class="from-component extra classes"
+  >
+    <span>
+      Click me
+    </span>
+  </button>
+</custom-button>
+`;
+
 exports[`injectComponent should inject a React component into DOM 1`] = `
 <custom-button>
   <button

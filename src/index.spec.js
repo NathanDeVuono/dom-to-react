@@ -68,4 +68,17 @@ describe("injectComponent", () => {
 
     expect(node).toMatchSnapshot();
   });
+
+  it("should apply props object", () => {
+    const node = document.createElement("custom-button");
+    node.textContent = "Click me";
+
+    injectComponent(Button, node, {
+      test: "prop",
+      complex: { data: { here: true } },
+      className: "extra classes",
+    });
+
+    expect(node).toMatchSnapshot();
+  });
 });
