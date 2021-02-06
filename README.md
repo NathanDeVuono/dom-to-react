@@ -10,7 +10,7 @@ This library is basically a wrapper around `react-dom`'s render function to do s
 
 TL;DR - Function signature:
 ```ts
-injectComponent(component: React.Component, element: Element): void;
+injectComponent(component: React.Component, element: Element, props = {}: Record<string, unknown>): void;
 ```
 
 First include the package in your project:
